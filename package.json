@@ -1,0 +1,26 @@
+{
+  "name": "ottergram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html --open --port 1116",
+    "build": "parcel build index.html --out-dir=build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelNovik/ottergram.git"
+  },
+  "keywords": [],
+  "author": "PavelNovik <brn2befree@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelNovik/ottergram/issues"
+  },
+  "homepage": "https://github.com/PavelNovik/ottergram#readme",
+  "devDependencies": {
+    "cssnano": "^5.1.11",
+    "postcss": "^8.4.14"
+  }
+}
