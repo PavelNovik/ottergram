@@ -1,13 +1,13 @@
+'use strict';
 var DETAIL_IMAGE_SELECTOR = '[data-image-role="target"]';
-console.log(DETAIL_IMAGE_SELECTOR);
+// console.log(DETAIL_IMAGE_SELECTOR);
 var DETAIL_TITLE_SELECTOR = '[data-image-role="title"]';
-console.log(DETAIL_TITLE_SELECTOR);
+// console.log(DETAIL_TITLE_SELECTOR);
 var THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
-console.log(THUMBNAIL_LINK_SELECTOR);
+// console.log(THUMBNAIL_LINK_SELECTOR);
+var HIDDEN_DETAIL_CLASS = 'hidden-detail';
 
 function setDetails(imageUrl, titleText) {
-  'use strict';
-
   var detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR);
   console.log(detailImage);
   detailImage.setAttribute('src', imageUrl);
@@ -18,24 +18,23 @@ function setDetails(imageUrl, titleText) {
 }
 
 function imageFromThumb(thumbnail) {
-  'use strict';
   return thumbnail.getAttribute('data-image-url');
 }
 
 function titleFromThumb(thumbnail) {
-  'use strict';
   return thumbnail.getAttribute('data-image-title');
 }
 
 function setDetailsFromThumb(thumbnail) {
-  'use strict';
   setDetails(imageFromThumb(thumbnail), titleFromThumb(thumbnail));
 }
 
 function addThumbClickHandler(thumb) {
-  'use strict';
   thumb.addEventListener('click', function (event) {
     event.preventDefault();
     setDetailsFromThumb(thumb);
   });
+}
+function hideDetails() {
+  document.body.classList.add(HIDDEN_DETAIL_CLASS);
 }
