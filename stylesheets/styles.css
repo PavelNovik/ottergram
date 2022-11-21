@@ -89,8 +89,10 @@ a {
   display: block;
   margin: 0;
   padding: 4px 10px;
-  background: rgb(19, 134, 134);
-  color: rgb(226, 243, 245);
+  /* background: rgb(19, 134, 134); */
+  background: rgb(96, 125, 139);
+  /* color: rgb(226, 243, 245); */
+  color: rgb(202, 238, 255);
   font-size: 18px;
 }
 
