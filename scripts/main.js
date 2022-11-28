@@ -39,3 +39,7 @@ function addThumbClickHandler(thumb) {
 function hideDetails() {
   document.body.classList.add(HIDDEN_DETAIL_CLASS);
 }
+
+const elements = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
+console.log(elements);
+elements.forEach((el) => addThumbClickHandler(el));
