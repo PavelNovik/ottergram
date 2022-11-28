@@ -1,18 +1,19 @@
 'use strict';
-var DETAIL_IMAGE_SELECTOR = '[data-image-role="target"]';
-// console.log(DETAIL_IMAGE_SELECTOR);
-var DETAIL_TITLE_SELECTOR = '[data-image-role="title"]';
-// console.log(DETAIL_TITLE_SELECTOR);
-var THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
-// console.log(THUMBNAIL_LINK_SELECTOR);
-var HIDDEN_DETAIL_CLASS = 'hidden-detail';
+const DETAIL_IMAGE_SELECTOR = '[data-image-role="target"]';
+console.log(DETAIL_IMAGE_SELECTOR);
+const DETAIL_TITLE_SELECTOR = '[data-image-role="title"]';
+console.log(DETAIL_TITLE_SELECTOR);
+const THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
+console.log(THUMBNAIL_LINK_SELECTOR);
+const HIDDEN_DETAIL_CLASS = 'hidden-detail';
+console.log(HIDDEN_DETAIL_CLASS);
 
 function setDetails(imageUrl, titleText) {
-  var detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR);
+  const detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR);
   console.log(detailImage);
   detailImage.setAttribute('src', imageUrl);
 
-  var detailTitle = document.querySelector(DETAIL_TITLE_SELECTOR);
+  const detailTitle = document.querySelector(DETAIL_TITLE_SELECTOR);
   console.log(detailTitle);
   detailTitle.textContent = titleText;
 }
