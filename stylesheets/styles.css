@@ -142,7 +142,7 @@ a {
   position: relative;
   text-align: center;
 
-  transition: transform 333ms;
+  transition: transform 333ms cubic-bezier(.35,.29,.7,.43);
 }
 
 .is-tiny {
